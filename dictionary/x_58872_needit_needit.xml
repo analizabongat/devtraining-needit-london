@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
         <element label="Date/Time" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="What You Needed" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Test 1" sequence="0" value="test 1"/>
+                <element inactive_on_update="false" label="Test 2" sequence="1" value="test 2"/>
+                <element inactive_on_update="false" label="Other" sequence="2" value="other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="When Needed" max_length="40" name="u_when_needed" type="string"/>
     </element>
 </database>
